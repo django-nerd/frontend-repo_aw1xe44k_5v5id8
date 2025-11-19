@@ -1,5 +1,6 @@
 import Navbar from '../components/Navbar'
 import CourseList from '../components/CourseList'
+import SeedData from '../components/SeedData'
 
 function CoursesPage() {
   return (
@@ -9,6 +10,7 @@ function CoursesPage() {
         <h1 className="text-3xl font-bold text-white mb-6">Courses</h1>
         <p className="text-slate-300 mb-8">Hands-on courses for each programming language. Select one to begin learning.</p>
         <CourseList />
+        <SeedData onSeeded={() => window.location.reload()} />
       </main>
     </div>
   )
